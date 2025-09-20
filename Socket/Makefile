@@ -2,13 +2,13 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-all: server client  # alvo 'all' depende de server e client
+all: server client  
 
 server: server.c
-	$(CC) $(CFLAGS) server.c -o server  # TAB antes do comando
+	$(CC) $(CFLAGS) server.c -o server  
 
 client: client.c
-	$(CC) $(CFLAGS) client.c -o client  # TAB antes do comando
+	$(CC) $(CFLAGS) client.c -o client  
 
 clean:
 	rm -f server client
